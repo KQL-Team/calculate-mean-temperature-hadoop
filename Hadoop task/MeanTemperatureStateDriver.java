@@ -21,7 +21,7 @@ public class MeanTemperatureStateDriver {
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FloatWritable.class);
-        job.setNumReduceTasks(1);
+        job.setNumReduceTasks(34);
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
